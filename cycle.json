@@ -20,33 +20,8 @@
           "ports": ["80:80"]
         },
         "deploy": {
-          "instances": 1
-        }
-      }
-    },
-    "reach": {
-      "name": "reach",
-      "image": {
-        "name": "simplews-external",
-        "origin": {
-          "type": "docker-file",
-          "details": {
-            "repo": {
-              "url": "https://github.com/aubuchcl/build-dir-two.git"
-            },
-            "context_dir": "/",
-            "build_file": "/Dockerfile"
-          }
-        }
-      },
-      "config": {
-        "network": {
-          "public": "enable",
-          "hostname": "simplews",
-          "ports": ["80:80"]
-        },
-        "deploy": {
-          "instances": 1
+          "instances": 0,
+          "strategy": "manual"
         }
       }
     }
