@@ -20,7 +20,7 @@
           "ports": ["80:80"]
         },
         "deploy": {
-          "instances": 0,
+          "instances": 1,
           "strategy": "manual"
         }
       }
