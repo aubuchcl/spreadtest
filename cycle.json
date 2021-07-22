@@ -27,7 +27,8 @@
       "image": {
         "name": "simplews",
         "origin": {
-          "type": "docker-file"
+          "type": "docker-file",
+          "details": {}
         }
       },
       "config": {
