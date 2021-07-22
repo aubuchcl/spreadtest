@@ -7,10 +7,27 @@
         "name": "simplews",
         "origin": {
           "type": "docker-file",
-          "details": {
-            "context_dir": "/",
-            "build_file": "/Dockerfile"
-          }
+          "details": {}
+        }
+      },
+      "config": {
+        "network": {
+          "public": "enable",
+          "hostname": "simplews",
+          "ports": ["80:80"]
+        },
+        "deploy": {
+          "instances": 1,
+          "strategy": "first-available"
+        }
+      }
+    },
+    "demo2": {
+      "name": "demo2",
+      "image": {
+        "name": "simplews",
+        "origin": {
+          "type": "docker-file"
         }
       },
       "config": {
