@@ -22,7 +22,7 @@
         }
       }
     },
-    "demo2": {
+     "demo2": {
       "name": "demo2",
       "image": {
         "name": "simplews",
